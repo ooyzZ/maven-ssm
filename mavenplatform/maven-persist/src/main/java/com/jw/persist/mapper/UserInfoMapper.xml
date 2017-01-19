@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jw.persist.dao.UserInfoMapper">
+  <resultMap id="BaseResultMap" type="com.jw.model.User">
+    <id column="u_id" jdbcType="VARCHAR" property="id" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    u_id, nickname, username, password,email,phone,address,status
+  </sql>
+
+<sql id="_where">
+	<where>
+		1=1
+		<if test="id!=null and id!=''">
+			and u_id=#{id}
+</if>
+		<if test="nickname!=null and nickname!=''">
+			and nickname=#{nickname}
+</if>
+		<if test="username!=null and username!=''">
+			and username=#{username}
+</if>
+		<if test="password!=null and password!=''">
+			and password=#{password}
+</if>
+		<if test="email!=null and email!=''">
+			and email=#{email}
+</if>
+		<if test="phone!=null and phone!=''">
+			and phone=#{phone}
+</if>
+		<if test="address!=null and address!=''">
+			and address=#{address}
+</if>
+		<if test="status!=null and status!=''">
+			and status=#{status}
+</if>
+	</where>
+</sql>
+  
+  <insert id="insertUserInfo" parameterType="com.jw.model.User">
+    insert into user_info (u_id, nickname, username, password,email,phone,address,inserttime)
+    values(#{id},#{nickname},#{username},#{password},#{email},#{phone},#{address},NOW())
+  </insert>
+ 
+ <select id="selectUserInfoByParms" parameterType="com.jw.model.User" resultMap="BaseResultMap">
+   select * from user_info <include refid="_where"></include>
+ </select>
+  
+  <update id="TestMaby" parameterType="com.jw.model.User">
+   UPDATE user_info SET STATUS=STATUS+1 WHERE u_id='40bd001563085fc35165329ea1ff5c5ecbdbbeef'
+  </update>
+  
+  
+  
+  
+  
+  
+  <insert id="insertSelective" parameterType="com.jw.model.User">
+    insert into user_t
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        name,
+      </if>
+      <if test="pwd != null">
+        pwd,
+      </if>
+      <if test="age != null">
+        age,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="pwd != null">
+        #{pwd,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.jw.model.User">
+    update user_t
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="pwd != null">
+        pwd = #{pwd,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        age = #{age,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.jw.model.User">
+    update user_t
+    set name = #{name,jdbcType=VARCHAR},
+      pwd = #{pwd,jdbcType=VARCHAR},
+      age = #{age,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

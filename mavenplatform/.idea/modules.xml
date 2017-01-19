@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/maven-controller/maven-controller.iml" filepath="$PROJECT_DIR$/maven-controller/maven-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-framework/maven-framework.iml" filepath="$PROJECT_DIR$/maven-framework/maven-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-model/maven-model.iml" filepath="$PROJECT_DIR$/maven-model/maven-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-persist/maven-persist.iml" filepath="$PROJECT_DIR$/maven-persist/maven-persist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-platform.iml" filepath="$PROJECT_DIR$/maven-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-utils/maven-utils.iml" filepath="$PROJECT_DIR$/maven-utils/maven-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-web/maven-web.iml" filepath="$PROJECT_DIR$/maven-web/maven-web.iml" />
+    </modules>
+  </component>
+</project>

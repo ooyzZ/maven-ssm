@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="maven-controller" />
+        <module name="maven-framework" />
+        <module name="maven-model" />
+        <module name="maven-persist" />
+        <module name="maven-utils" />
+        <module name="maven-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="maven-controller" target="1.5" />
+      <module name="maven-framework" target="1.5" />
+      <module name="maven-model" target="1.5" />
+      <module name="maven-persist" target="1.5" />
+      <module name="maven-utils" target="1.5" />
+      <module name="maven-web" target="1.5" />
+      <module name="mavenplatform" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
