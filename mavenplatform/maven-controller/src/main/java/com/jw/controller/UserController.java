@@ -52,6 +52,7 @@ public class UserController {
 		return "success";
 	}
 	class MyThread extends Thread{
+		//线程启动方法
 	    public void run(){
 	    System.out.println("Mythread 线程");
 	}
