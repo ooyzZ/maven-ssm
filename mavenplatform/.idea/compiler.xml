@@ -19,6 +19,7 @@
       <module name="maven-framework" target="1.5" />
       <module name="maven-model" target="1.5" />
       <module name="maven-persist" target="1.5" />
+      <module name="maven-platform" target="1.5" />
       <module name="maven-utils" target="1.5" />
       <module name="maven-web" target="1.5" />
       <module name="mavenplatform" target="1.5" />
