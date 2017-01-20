@@ -58,11 +58,6 @@
    UPDATE user_info SET STATUS=STATUS+1 WHERE u_id='40bd001563085fc35165329ea1ff5c5ecbdbbeef'
   </update>
   
-  
-  
-  
-  
-  
   <insert id="insertSelective" parameterType="com.jw.model.User">
     insert into user_t
     <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -110,4 +105,8 @@
       age = #{age,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+    <select id="slectAll" resultMap="BaseResultMap">
+    SELECT <include refid="Base_Column_List"></include> FROM user_info
+    </select>
 </mapper>

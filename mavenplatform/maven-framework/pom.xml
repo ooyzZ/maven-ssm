@@ -197,7 +197,7 @@
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
-            <version>3.4.3</version>
+            <version>4.2.1</version>
         </dependency>
     </dependencies>
 </project>

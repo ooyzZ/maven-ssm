@@ -100,6 +100,17 @@
   	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">  
     <property name="dataSource" ref="dataSource" />
     <property name="mapperLocations" value="classpath:com/jw/persist/mapper/*.xml" />
-    <property name="configLocation" value="classpath:myBatis-config.xml" />  
-</bean>  
+   <!-- <property name="configLocation" value="classpath:myBatis-config.xml" />-->
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageHelper">
+                    <property name="properties">
+                        <value>
+                            dialect=mysql
+                        </value>
+                    </property>
+                </bean>
+            </array>
+        </property>
+</bean>
 </beans>  

@@ -1,6 +1,8 @@
 package com.jw.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.jw.handler.EhCacheServiceHandler;
 import com.jw.model.JsonData;
 import com.jw.model.JsonMsg;
@@ -71,7 +73,7 @@ public class UserController {
 
 	@RequestMapping("user/Upload")
 	@ResponseBody
-	public String Upload(HttpServletRequest request,Model model,String myid){
+	public String Upload(HttpServletRequest request){
 		MultipartHttpServletRequest multipartHttpServletRequest=(MultipartHttpServletRequest) request;
 		Map<String, MultipartFile> fileMap=multipartHttpServletRequest.getFileMap();
 		for (Map.Entry<String, MultipartFile>entity : fileMap.entrySet()) {
@@ -86,7 +88,7 @@ public class UserController {
 			try {
 				fileOutputStrea=new FileOutputStream(new File("D:\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\show\\img\\"+entity.getValue().getOriginalFilename()));
 				byte byttfer[]=new byte[1024];
-				int c=-1;
+				int c;
 				while ((c=stream.read(byttfer))!=-1) {
 					fileOutputStrea.write(byttfer,0,c);
 				}
@@ -262,4 +264,14 @@ public class UserController {
 			System.out.println("Mythread 线程");
 		}
 	}
+
+	@RequestMapping("/testPage.do")
+	@ResponseBody
+	public String testPage(){
+		PageHelper.startPage(1,2);
+		PageHelper.orderBy("inserttime");
+		List<User>list=userInfoService.selecAll();
+		PageInfo<User>pageInfo=new PageInfo<User>(list);
+		return JSON.toJSONString(pageInfo);
+			}
 }

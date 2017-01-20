@@ -49,8 +49,8 @@
           <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache-core:2.2.0" />
           <element id="library" level="project" name="Maven: javax.mail:javax.mail-api:1.5.6" />
           <element id="library" level="project" name="Maven: org.json:json:20160810" />
-          <element id="library" level="project" name="Maven: com.github.pagehelper:pagehelper:3.4.3" />
-          <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:0.9.1" />
+          <element id="library" level="project" name="Maven: com.github.pagehelper:pagehelper:4.2.1" />
+          <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:0.9.5" />
           <element id="archive" name="maven-persist-1.0-SNAPSHOT.jar">
             <element id="module-output" name="maven-persist" />
           </element>

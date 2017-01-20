@@ -9,6 +9,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Service("userService")
@@ -25,6 +26,7 @@ public class UserInfoService {
 	 * @return
 	 */
 	public Map<String, Object> loginCheck(User user, HttpSession session) {
+
 		Map<String, Object>map=new HashMap<String, Object>();
 		user.setUsername(EncryptUtil.sha(user.getUsername()));
 		user.setPassword(EncryptUtil.sha(user.getPassword()));
@@ -91,5 +93,9 @@ public class UserInfoService {
 		int a= userMapper.TestMaby(aUser);
 		int b= userMapper.TestMaby(aUser);
 		System.out.println(b+","+b);
+	}
+
+	public List<User> selecAll(){
+		return userMapper.slectAll();
 	}
 }

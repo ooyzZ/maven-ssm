@@ -60,8 +60,8 @@
     <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache-core:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: javax.mail:javax.mail-api:1.5.6" level="project" />
     <orderEntry type="library" name="Maven: org.json:json:20160810" level="project" />
-    <orderEntry type="library" name="Maven: com.github.pagehelper:pagehelper:3.4.3" level="project" />
-    <orderEntry type="library" name="Maven: com.github.jsqlparser:jsqlparser:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: com.github.pagehelper:pagehelper:4.2.1" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jsqlparser:jsqlparser:0.9.5" level="project" />
     <orderEntry type="module" module-name="maven-persist" />
     <orderEntry type="module" module-name="maven-utils" />
     <orderEntry type="module" module-name="maven-model" />
