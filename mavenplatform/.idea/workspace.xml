@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29f00017-f287-4506-97bc-df477713a7dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/maven_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/maven_web_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maven-controller/maven-controller.iml" afterPath="$PROJECT_DIR$/maven-controller/maven-controller.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maven-controller/src/main/java/com/jw/controller/UserController.java" afterPath="$PROJECT_DIR$/maven-controller/src/main/java/com/jw/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maven-framework/maven-framework.iml" afterPath="$PROJECT_DIR$/maven-framework/maven-framework.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maven-framework/pom.xml" afterPath="$PROJECT_DIR$/maven-framework/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maven-framework/src/main/java/com/jw/interceptor/SessionFilter.java" afterPath="$PROJECT_DIR$/maven-framework/src/main/java/com/jw/interceptor/SessionFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maven-model/maven-model.iml" afterPath="$PROJECT_DIR$/maven-model/maven-model.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maven-persist/maven-persist.iml" afterPath="$PROJECT_DIR$/maven-persist/maven-persist.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maven-persist/src/main/java/com/jw/persist/dao/UserInfoMapper.java" afterPath="$PROJECT_DIR$/maven-persist/src/main/java/com/jw/persist/dao/UserInfoMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maven-persist/src/main/java/com/jw/persist/mapper/UserInfoMapper.xml" afterPath="$PROJECT_DIR$/maven-persist/src/main/java/com/jw/persist/mapper/UserInfoMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maven-persist/src/main/java/com/jw/persist/service/UserInfoService.java" afterPath="$PROJECT_DIR$/maven-persist/src/main/java/com/jw/persist/service/UserInfoService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maven-utils/maven-utils.iml" afterPath="$PROJECT_DIR$/maven-utils/maven-utils.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maven-web/maven-web.iml" afterPath="$PROJECT_DIR$/maven-web/maven-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maven-web/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/maven-web/src/main/resources/spring-mvc.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_5.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_3_4_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_2_1.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/maven-model/target/" />
     <ignored path="$PROJECT_DIR$/maven-framework/target/" />
@@ -678,7 +662,7 @@
       <workItem from="1484874902005" duration="10762000" />
       <workItem from="1484892195304" duration="5750000" />
       <workItem from="1484898346312" duration="305000" />
-      <workItem from="1484899052355" duration="3663000" />
+      <workItem from="1484899052355" duration="3768000" />
     </task>
     <task id="LOCAL-00001" summary="new update">
       <created>1484881042939</created>
@@ -687,11 +671,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484881042939</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="新增分页插件">
+      <created>1484902798345</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1484902798345</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21575000" />
+    <option name="totallyTimeSpent" value="21680000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -745,7 +736,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new update" />
-    <option name="LAST_COMMIT_MESSAGE" value="new update" />
+    <MESSAGE value="新增分页插件" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增分页插件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
